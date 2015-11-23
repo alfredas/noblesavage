@@ -1,0 +1,5 @@
+# Module nl.tudelft.tbm.noblesavage.NobleSavage
+# RPC service class, partial path of RPC policy file
+nl.tudelft.tbm.noblesavage.facade.ArticleFacade, A440039242D167FB6458B9473CC0BE40.gwt.rpc
+nl.tudelft.tbm.noblesavage.facade.CorpusFacade, 9A90C1743C10097759E8D10D49524F3E.gwt.rpc
+nl.tudelft.tbm.noblesavage.facade.UserFacade, CB900D8BCCAF6BDBC96305F3C539AB01.gwt.rpc

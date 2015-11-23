@@ -1,0 +1,19 @@
+<projectDescription>
+  <name>noblesavage-webapp</name>
+  <comment/>
+  <projects>
+    <project>noblesavage-common</project>
+    <project>noblesavage-domain</project>
+    <project>noblesavage-facade</project>
+    <project>noblesavage-facade-impl</project>
+    <project>noblesavage-store-hibernate</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

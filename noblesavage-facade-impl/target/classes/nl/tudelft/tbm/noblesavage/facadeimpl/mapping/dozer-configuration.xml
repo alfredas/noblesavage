@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mappings PUBLIC "-//DOZER//DTD MAPPINGS//EN" "http://dozer.sourceforge.net/dtd/dozerbeanmapping.dtd">
+
+<mappings>
+
+  <configuration>
+    <stop-on-errors>true</stop-on-errors>
+    <date-format>yyyy-MM-dd HH:mm</date-format>
+    <wildcard>true</wildcard>
+  </configuration>
+
+  <mapping>
+    <class-a>nl.tudelft.tbm.noblesavage.domain.article.Article</class-a>
+    <class-b>nl.tudelft.tbm.noblesavage.facade.ArticleDTO</class-b>
+  </mapping>
+  
+  <mapping>
+    <class-a>nl.tudelft.tbm.noblesavage.domain.corpus.Corpus</class-a>
+    <class-b>nl.tudelft.tbm.noblesavage.facade.CorpusDTO</class-b>
+  </mapping>
+  
+  <mapping>
+    <class-a>nl.tudelft.tbm.noblesavage.domain.semantics.SearchResult</class-a>
+    <class-b> nl.tudelft.tbm.noblesavage.facade.SearchResultDTO</class-b>
+  </mapping>
+  
+  <mapping>
+    <class-a>nl.tudelft.tbm.noblesavage.domain.corpus.ReaderParameter</class-a>
+    <class-b>nl.tudelft.tbm.noblesavage.facade.ReaderParameterDTO</class-b>
+  </mapping>
+
+</mappings>

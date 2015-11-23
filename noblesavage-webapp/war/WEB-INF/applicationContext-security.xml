@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+  xmlns="http://www.springframework.org/schema/beans" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns:sec="http://www.springframework.org/schema/security"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-2.0.xsd
+  ">
+  
+  <sec:http>
+    <sec:intercept-url pattern="/**" />
+    <sec:http-basic/>
+  </sec:http>
+
+  <bean id="mayhemUserDetailsService" class="lt.node.mayhem.security.MayhemUserDetailsServiceImpl">
+    <property name="mayhemUserStore" ref="mayhemUserStore" />
+  </bean>
+
+  <sec:authentication-provider user-service-ref="mayhemUserDetailsService" />
+  
+  <!--
+  <sec:user-service id="inMemoryUserService">
+    <sec:user name="admin" password="adminpass" authorities="ROLE_USER,ROLE_ADMIN"/>
+    <sec:user name="user" password="userpass" authorities="ROLE_USER"/>
+  </sec:user-service>
+  -->
+  
+  <sec:authentication-manager alias="authenticationManager" />
+  
+  <!-- Allows remote clients to check if a username/password is valid -->
+  <bean id="remoteAuthenticationManager"
+    class="org.springframework.security.providers.rcp.RemoteAuthenticationManagerImpl">
+    <property name="authenticationManager" ref="authenticationManager" />
+  </bean>
+  
+  <sec:global-method-security access-decision-manager-ref="accessDecisionManager">
+    <sec:protect-pointcut expression="execution(* lt.node.mayhem.facade.*Facade.*(..))" access="ROLE_USER" />
+  </sec:global-method-security>
+  
+  <bean id="accessDecisionManager" class="lt.node.mayhem.security.AllAttributesPerVoterUnanimousBased">
+    <property name="decisionVoters">
+      <list>
+        <bean class="org.springframework.security.vote.RoleVoter" />
+      </list>
+    </property>
+  </bean>
+
+</beans>

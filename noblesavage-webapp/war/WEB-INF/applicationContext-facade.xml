@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 
+  xmlns="http://www.springframework.org/schema/beans" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:tx="http://www.springframework.org/schema/tx" 
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+  ">
+
+  <tx:annotation-driven />
+  
+  <bean id="beanMapper" class="nl.tudelft.tbm.noblesavage.facadeimpl.mapping.DozerMapper">
+    <property name="mapper">
+      <bean class="net.sf.dozer.util.mapping.DozerBeanMapper">
+        <property name="mappingFiles">
+          <list>
+            <value>nl/tudelft/tbm/noblesavage/facadeimpl/mapping/dozer-configuration.xml</value>
+          </list>
+        </property>
+      </bean>
+    </property>
+  </bean>
+  
+  <bean id="fallbackIndexingService" class="nl.tudelft.tbm.noblesavage.domain.semantics.BasicCorpusIndexingService"/>
+  
+  <bean id="corpusIndexingService" class="nl.tudelft.tbm.noblesavage.domain.semantics.CachingCorpusIndexingService">
+  	<property name="corpusStore" ref="corpusStore"/>
+    <property name="fallbackIndexingService" ref="fallbackIndexingService"/>
+  </bean>
+  
+  <bean id="corpusStatisticsService" class="nl.tudelft.tbm.noblesavage.domain.semantics.BasicStatisticsService">
+  	<property name="corpusIndexingService" ref="fallbackIndexingService"/>
+  </bean>
+  
+  <bean id="userVectorStore" class="nl.tudelft.tbm.noblesavage.domain.semantics.UserVectorStore" scope="session">
+    <aop:scoped-proxy/>
+  </bean>
+  
+  <bean id="vectorStoreBuildingService" class="nl.tudelft.tbm.noblesavage.domain.semantics.VectorStoreBuildingService"/>
+  
+  <bean id="searchService" class="nl.tudelft.tbm.noblesavage.domain.semantics.SearchService">
+  	<property name="corpusIndexingService" ref="corpusIndexingService"/>
+    <property name="vectorStoreBuildingService" ref="vectorStoreBuildingService"/>
+    <property name="userVectorStore" ref="userVectorStore"/>
+  </bean>
+  
+  <bean id="corpusFacade" class="nl.tudelft.tbm.noblesavage.facadeimpl.CorpusFacadeImpl">
+    <property name="corpusStore" ref="corpusStore" />
+    <property name="articleStore" ref="articleStore" />
+    <property name="beanMapper" ref="beanMapper" />
+    <property name="searchService" ref="searchService"/>
+    <property name="corpusStatisticsService" ref="corpusStatisticsService"/>
+  </bean>
+  
+  <bean id="articleFacade" class="nl.tudelft.tbm.noblesavage.facadeimpl.ArticleFacadeImpl">
+    <property name="articleStore" ref="articleStore" />
+    <property name="beanMapper" ref="beanMapper" />
+  </bean>
+  
+  <bean id="userFacade" class="nl.tudelft.tbm.noblesavage.facadeimpl.UserFacadeImpl">
+    <property name="userStore" ref="userStore" />
+    <property name="beanMapper" ref="beanMapper" />
+  </bean>
+  
+  
+  
+</beans>

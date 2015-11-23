@@ -1,0 +1,186 @@
+====================================
+Types potentially sent from browser:
+====================================
+
+Reachable types computed on: Thu Nov 10 15:51:37 CET 2011
+boolean
+   Serialization status
+      Not serializable
+   Path
+      'boolean' is reachable from field 'ambiguousYear' of type 'com.google.gwt.i18n.client.impl.DateRecord'
+      'com.google.gwt.i18n.client.impl.DateRecord' is reachable as a subtype of type 'class java.util.Date'
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+com.google.gwt.core.client.JavaScriptObject
+   Serialization status
+      Not serializable
+   Path
+      'com.google.gwt.core.client.JavaScriptObject' is reachable from field 'jsdate' of type 'java.util.Date'
+      'java.util.Date' is reachable as a subtype of type 'class java.util.Date'
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+com.google.gwt.i18n.client.impl.DateRecord
+   Serialization status
+      Instantiable
+   Path
+      'com.google.gwt.i18n.client.impl.DateRecord' is reachable as a subtype of type 'class java.util.Date'
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+int
+   Serialization status
+      Not serializable
+   Path
+      'int' is reachable from field 'era' of type 'com.google.gwt.i18n.client.impl.DateRecord'
+      'com.google.gwt.i18n.client.impl.DateRecord' is reachable as a subtype of type 'class java.util.Date'
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+java.lang.Exception
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.Long
+   Serialization status
+      Instantiable
+   Path
+      'java.lang.Long' is reachable from field 'id' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+java.lang.Number
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Number' is reachable as a supertype of type 'class java.lang.Long'
+      'java.lang.Long' is reachable as a subtype of type 'class java.lang.Long'
+      'java.lang.Long' is reachable from field 'id' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+java.lang.RuntimeException
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.String
+   Serialization status
+      Instantiable
+   Path
+      Started from 'java.lang.String'
+
+java.lang.Throwable
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Throwable' is reachable as a supertype of type 'class java.lang.Exception'
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.sql.Date
+   Serialization status
+      Instantiable
+   Path
+      'java.sql.Date' is reachable as a subtype of type 'class java.util.Date'
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+java.sql.Time
+   Serialization status
+      Instantiable
+   Path
+      'java.sql.Time' is reachable as a subtype of type 'class java.util.Date'
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+java.sql.Timestamp
+   Serialization status
+      Instantiable
+   Path
+      'java.sql.Timestamp' is reachable as a subtype of type 'class java.util.Date'
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+java.util.Date
+   Serialization status
+      Instantiable
+   Path
+      'java.util.Date' is reachable from field 'dateCreated' of type 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      'nl.tudelft.tbm.noblesavage.facade.ArticleDTO' is reachable as a subtype of type 'class nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+nl.tudelft.tbm.noblesavage.facade.ArticleDTO
+   Serialization status
+      Instantiable
+   Path
+      Started from 'nl.tudelft.tbm.noblesavage.facade.ArticleDTO'
+
+===================================
+Types potentially sent from server:
+===================================
+
+Reachable types computed on: Thu Nov 10 15:51:37 CET 2011
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.Exception
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.RuntimeException
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.String
+   Serialization status
+      Instantiable
+   Path
+      Started from 'java.lang.String'
+
+java.lang.Throwable
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Throwable' is reachable as a supertype of type 'class java.lang.Exception'
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+

@@ -1,0 +1,1133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: com.google.gwt.http.client</h2>
+<a name="com.google.gwt.http.client.Request$1"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.Request$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request$1</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::createResponse</li>
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request$1::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request$1::$Request$1</li>
+<li>com.google.gwt.http.client.Request::createResponse</li>
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::createResponse</li>
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.Request$3"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.Request$3</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request$3</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request$3::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request$3::$Request$3</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request$3::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request$3::run</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.Request"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.Request</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::$cancel</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$fireOnTimeout</li>
+<li>com.google.gwt.http.client.Request$3::run</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::$cancelTimer</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$cancel</li>
+<li>com.google.gwt.http.client.Request::$fireOnTimeout</li>
+<li>com.google.gwt.http.client.Request$3::run</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::$fireOnResponseReceived</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::$fireOnTimeout</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request$3::run</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::$getBrowserSpecificFailure</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::createResponse</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Request::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.RequestBuilder$1"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.RequestBuilder$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$1</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$1::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder$1::$RequestBuilder$1</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.RequestBuilder$Method"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.RequestBuilder$Method</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$Method</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$RequestBuilder</li>
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$create</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$Method::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder$Method::$RequestBuilder$Method</li>
+<li>com.google.gwt.http.client.RequestBuilder::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$RequestBuilder</li>
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$create</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$Method::$toString</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getDescription</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$Method::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.core.client.JavaScriptException::getName</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder$Method::toString</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getDescription</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.RequestBuilder"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.RequestBuilder</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$create</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$RequestBuilder</li>
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$create</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder::$doSend</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder::$sendRequest</a>
+<ul class="soyc-call-stack-list">
+<li>gwtupload.client.Uploader::$sendAjaxRequestToValidateSession</li>
+<li>gwtupload.client.Uploader$10::$onSubmit</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::$dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$fireSubmitEvent</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$submit</li>
+<li>gwtupload.client.Uploader$1::run</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder::$setHeader</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$setContentType</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder::$setHeaders</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder::$setTimeoutMillis</a>
+<ul class="soyc-call-stack-list">
+<li>gwtupload.client.Uploader::$sendAjaxRequestToValidateSession</li>
+<li>gwtupload.client.Uploader$10::$onSubmit</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::$dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$fireSubmitEvent</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$submit</li>
+<li>gwtupload.client.Uploader$1::run</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestBuilder::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.core.client.JavaScriptException::getName</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.RequestCallback"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.RequestCallback</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestCallback</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestCallback::onError</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$fireOnTimeout</li>
+<li>com.google.gwt.http.client.Request$3::run</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestCallback::onResponseReceived</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.RequestException"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.RequestException</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestException</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestException::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestPermissionException::$RequestPermissionException</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestException::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.core.client.JavaScriptException::getName</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.RequestPermissionException"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.RequestPermissionException</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestPermissionException</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestPermissionException::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestPermissionException::$RequestPermissionException</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestPermissionException::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.core.client.JavaScriptException::getName</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.RequestTimeoutException"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.RequestTimeoutException</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestTimeoutException</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$fireOnTimeout</li>
+<li>com.google.gwt.http.client.Request$3::run</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestTimeoutException::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestTimeoutException::$RequestTimeoutException</li>
+<li>com.google.gwt.http.client.Request::$fireOnTimeout</li>
+<li>com.google.gwt.http.client.Request$3::run</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.RequestTimeoutException::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::$fireOnTimeout</li>
+<li>com.google.gwt.http.client.Request$3::run</li>
+<li>com.google.gwt.http.client.Request::$Request</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.Response"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.Response</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Response</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request$1::$Request$1</li>
+<li>com.google.gwt.http.client.Request::createResponse</li>
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.Response::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.Request::createResponse</li>
+<li>com.google.gwt.http.client.Request::$fireOnResponseReceived</li>
+<li>com.google.gwt.http.client.RequestBuilder$1::onReadyStateChange</li>
+<li>com.google.gwt.xhr.client.ReadyStateChangeHandler::$clinit</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.StringValidator"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.StringValidator</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.StringValidator</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.StringValidator::throwIfEmptyOrNull</li>
+<li>com.google.gwt.http.client.RequestBuilder::$RequestBuilder</li>
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$create</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.StringValidator::throwIfEmptyOrNull</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$RequestBuilder</li>
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$create</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.StringValidator::throwIfNull</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.StringValidator::throwIfEmptyOrNull</li>
+<li>com.google.gwt.http.client.RequestBuilder::$RequestBuilder</li>
+<li>com.google.gwt.user.client.rpc.RpcRequestBuilder::$create</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doPrepareRequestBuilderImpl</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.http.client.URL"><h3 class="soyc-class-header">Class: com.google.gwt.http.client.URL</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.URL</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.URL::decodeComponent</li>
+<li>com.google.gwt.user.client.Window$Location::buildListParamMap</li>
+<li>com.google.gwt.user.client.Window$Location::getParameterMap</li>
+<li>gwtupload.client.Uploader::$composeURL</li>
+<li>gwtupload.client.Uploader::$sendAjaxRequestToValidateSession</li>
+<li>gwtupload.client.Uploader$10::$onSubmit</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::$dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$fireSubmitEvent</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$submit</li>
+<li>gwtupload.client.Uploader$1::run</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.URL::decodeComponent</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.user.client.Window$Location::buildListParamMap</li>
+<li>com.google.gwt.user.client.Window$Location::getParameterMap</li>
+<li>gwtupload.client.Uploader::$composeURL</li>
+<li>gwtupload.client.Uploader::$sendAjaxRequestToValidateSession</li>
+<li>gwtupload.client.Uploader$10::$onSubmit</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::$dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$fireSubmitEvent</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$submit</li>
+<li>gwtupload.client.Uploader$1::run</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.http.client.URL::decodeComponentImpl</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.URL::decodeComponent</li>
+<li>com.google.gwt.user.client.Window$Location::buildListParamMap</li>
+<li>com.google.gwt.user.client.Window$Location::getParameterMap</li>
+<li>gwtupload.client.Uploader::$composeURL</li>
+<li>gwtupload.client.Uploader::$sendAjaxRequestToValidateSession</li>
+<li>gwtupload.client.Uploader$10::$onSubmit</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::$dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel$SubmitEvent::dispatch</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$fireSubmitEvent</li>
+<li>com.google.gwt.user.client.ui.FormPanel::$submit</li>
+<li>gwtupload.client.Uploader$1::run</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

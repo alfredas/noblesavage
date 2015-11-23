@@ -1,0 +1,43 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>noblesavage</artifactId>
+    <groupId>nl.tudelft.tbm.noblesavage</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>noblesavage-common</artifactId>
+  <name>noblesavage-common</name>
+  <packaging>jar</packaging>
+
+  <dependencies>
+  
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymock</artifactId>
+    </dependency>
+
+  </dependencies>
+
+
+</project>

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>nl.tudelft.tbm.noblesavage</groupId>
+  <artifactId>noblesavage</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>noblesavage</name>
+  <url>http://noblesavage.tbm.tudelft.nl</url>
+  
+  <organization>
+    <name>Noble Savage at TBM TU Delft</name>
+    <url>http://test.eeni.tbm.tudelft.nl/trac/noblesavage/</url>
+  </organization>
+  
+  <scm>
+    <connection>scm:svn:svn+ssh://gux.tudelft.nl/svn/NobleSavage/trunk/</connection>
+    <developerConnection>scm:svn:svn+ssh://gux.tudelft.nl/svn/NobleSavage/trunk/</developerConnection>
+    <url>http://gux.tudelft.nl/svn/NobleSavage/trunk/</url>
+  </scm>
+  
+  <modules>
+    <module>noblesavage-domain</module>
+    <module>noblesavage-facade</module>
+    <module>noblesavage-facade-impl</module>
+    <module>noblesavage-common</module>
+    <module>noblesavage-store-hibernate</module>
+    <module>noblesavage-webapp</module>
+  </modules>
+  
+  <properties>
+    <spring.version>2.5.2</spring.version>
+    <acegi.version>1.0.6</acegi.version>
+    <spring-security.version>2.0.1</spring-security.version>
+    <gwt.version>2.0.3</gwt.version>
+    <maven.compiler.source>1.5</maven.compiler.source>
+    <maven.compiler.target>1.5</maven.compiler.target>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+    
+      <!-- ========== Project modules ========== -->
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage</groupId>
+        <artifactId>noblesavage-common</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage</groupId>
+        <artifactId>noblesavage-domain</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage</groupId>
+        <artifactId>noblesavage-facade</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage</groupId>
+        <artifactId>noblesavage-facade-impl</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage</groupId>
+        <artifactId>noblesavage-store-hibernate</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage</groupId>
+        <artifactId>noblesavage-webapp</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <!-- ========== testing ========== -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.4</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.easymock</groupId>
+        <artifactId>easymock</artifactId>
+        <version>2.3</version>
+        <scope>test</scope>
+      </dependency>
+      
+      <!-- ========== logging ========== -->
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.0.4</version>
+      </dependency>
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.13</version>
+      </dependency>
+      
+      <!-- ========== joda-time ========== -->
+      <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>1.5.2</version>
+      </dependency>
+      <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time-hibernate</artifactId>
+        <version>1.0</version>
+        <scope>runtime</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>hibernate</groupId>
+            <artifactId>hibernate</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-full</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <!-- ========== Spring Framework ========== -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aspects</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context-support</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.jdo</groupId>
+            <artifactId>jdo2-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>          
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>${spring.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-tx</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      
+      <!-- ========== Spring Security ========== -->
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-core</artifactId>
+        <version>${spring-security.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-support</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-core-tiger</artifactId>
+        <version>${spring-security.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-support</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      
+      <!-- needed for Spring Security -->
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>1.5.4</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.5.4</version>
+      </dependency>
+      
+      <!-- ========== Acegi Security ========== -->
+      <dependency>
+        <groupId>org.acegisecurity</groupId>
+        <artifactId>acegi-security</artifactId>
+        <version>${acegi.version}</version>
+		<exclusions>
+	      <exclusion>
+		    <groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		  </exclusion>
+	      <exclusion>
+		    <groupId>org.springframework</groupId>
+			<artifactId>spring-remoting</artifactId>
+		  </exclusion>
+	      <exclusion>
+		    <groupId>org.springframework</groupId>
+			<artifactId>spring-support</artifactId>
+		  </exclusion>
+		</exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.acegisecurity</groupId>
+        <artifactId>acegi-security-tiger</artifactId>
+        <version>${acegi.version}</version>
+      </dependency>
+      
+      <!-- ========== Hibernate ========== -->  
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate</artifactId>
+        <version>3.2.6.ga</version>
+        <scope>compile</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>ant</groupId>
+            <artifactId>ant</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>   
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-annotations</artifactId>
+        <version>3.3.0.ga</version>
+        <scope>compile</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-commons-annotations</artifactId>
+        <version>3.3.0.ga</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <!-- ========== cache ========== -->
+      <dependency>
+        <groupId>net.sf.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
+        <version>1.2.3</version>
+        <scope>runtime</scope>
+      </dependency>
+	  
+      <!-- ========== PostgreSQL JDBC driver ========== -->
+      <dependency>
+        <groupId>postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>8.3-603.jdbc4</version>
+        <scope>runtime</scope>
+      </dependency>
+
+      <!-- ========== Database connection pooling ========== -->
+      <dependency>
+        <groupId>commons-dbcp</groupId>
+        <artifactId>commons-dbcp</artifactId>
+        <version>1.2.1</version>
+        <scope>runtime</scope>
+      </dependency>
+      
+      <!-- ========== Liquibase - database schema migration ========== -->
+      <dependency>
+        <groupId>org.liquibase</groupId>
+        <artifactId>liquibase-core</artifactId>
+        <version>1.5.2</version>
+        <scope>runtime</scope>
+      </dependency>
+      
+      <!-- ========== Servlet API ========== -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.5</version>
+        <scope>provided</scope>
+      </dependency>
+      
+      <!-- ========== Granite Data Services ========== -->
+      
+      <!--
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage.granite</groupId>
+        <artifactId>granite</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage.granite</groupId>
+        <artifactId>granite-spring</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage.granite</groupId>
+        <artifactId>granite-swc</artifactId>
+        <version>1.0.1</version>
+        <type>swc</type>
+      </dependency>
+      -->      
+
+
+      <!-- needed for granite -->
+      <!--
+      <dependency>
+        <groupId>jdom</groupId>
+        <artifactId>jdom</artifactId>
+        <version>1.0</version>
+      </dependency>
+      -->
+
+      <!-- ========== Dozer - JavaBeans mapper ========== -->
+      <dependency>
+        <groupId>net.sf.dozer</groupId>
+        <artifactId>dozer</artifactId>
+        <version>4.2</version>
+      </dependency>
+
+      <!-- ========== ROME - RSS Parser ========== -->
+      <dependency>
+        <groupId>rome</groupId>
+        <artifactId>rome</artifactId>
+        <version>0.9</version>
+      </dependency>
+
+      <!-- ========== Email support ========== -->
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>mail</artifactId>
+        <version>1.4</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>javax.activation</groupId>
+        <artifactId>activation</artifactId>
+        <version>1.1</version>
+      </dependency>
+
+      <!-- ========== GWT ================ -->
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-servlet</artifactId>
+        <version>${gwt.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-user</artifactId>
+        <version>${gwt.version}</version>
+        <scope>provided</scope>
+      </dependency>
+    
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-dev</artifactId>
+        <version>${gwt.version}</version>
+      </dependency>
+
+	<dependency>
+	    <groupId>com.google.gwt</groupId>
+	    <artifactId>gwt-incubator</artifactId>
+	    <version>2.0.1</version>
+	</dependency>
+	
+	<dependency>
+      <groupId>com.googlecode.gwtupload</groupId>
+      <artifactId>gwtupload</artifactId>
+      <version>0.6.3-compat</version>
+    </dependency>
+    <!-- ======== FlexJson (JSON serializer) ======== -->
+    <dependency>
+      <groupId>net.sf.flexjson</groupId>
+      <artifactId>flexjson</artifactId>
+      <version>2.1</version>
+    </dependency>
+
+
+      <!-- ====== Lucene ============== -->
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-core</artifactId>
+        <version>3.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-snowball</artifactId>
+        <version>3.0.1</version>
+      </dependency>
+
+      
+       <!-- ====== Semantic Vectors ============== -->
+      <dependency>
+        <groupId>nl.tudelft.tbm.noblesavage.semanticvectors</groupId>
+        <artifactId>semanticvectors</artifactId>
+        <version>0.1</version>
+      </dependency>
+      
+      <!-- ====== Tag Soup Sax HTML parser ====== -->
+      <dependency>
+        <groupId>org.ccil.cowan.tagsoup</groupId>
+        <artifactId>tagsoup</artifactId>
+        <version>1.2</version>
+      </dependency>
+      
+      <!-- ====== PDFBox ====== -->
+      <dependency>
+        <groupId>org.apache.pdfbox</groupId>
+        <artifactId>pdfbox</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <!-- ===== JSP ==== -->
+      <dependency>
+        <groupId>jstl</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+    
+      <!-- HTTP Client -->
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.0.1</version>
+      </dependency>
+    
+      <!-- cryptography required by pdfbox -->
+      <dependency>
+        <groupId>bouncycastle</groupId>
+        <artifactId>bcprov-jdk16</artifactId>
+        <version>140</version>
+      </dependency>
+
+
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <defaultGoal>install</defaultGoal>
+    
+    <pluginManagement>
+      <plugins>
+
+        <!-- Maven standard plugins -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.1</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.0.2</version>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>2.0</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.3</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-eclipse-plugin</artifactId>
+          <version>2.4</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.3</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.0-beta-7</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>2.0.4</version>
+          <executions>
+            <execution>
+              <phase>package</phase>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.4.2</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>2.0.2</version>
+        </plugin>
+        
+        <!-- Codehaus plugins -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.1-beta-1</version>
+        </plugin>
+        
+        <!-- Other plugins -->
+        <plugin>
+          <groupId>org.mortbay.jetty</groupId>
+          <artifactId>maven-jetty-plugin</artifactId>
+          <version>6.1.7</version>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>gwt-maven-plugin</artifactId>
+          <version>1.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <!-- this is needed to deploy to WebDAV repositories -->    
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
+    
+  </build>
+  
+  <distributionManagement>
+    <repository>
+      <id>noblesavage.archiva.internal</id>
+      <url>dav:http://test.eeni.tbm.tudelft.nl:8080/archiva/repository/internal</url>
+    </repository>
+    <snapshotRepository>
+      <id>noblesavage.archiva.snapshots</id>
+      <url>dav:http://test.eeni.tbm.tudelft.nl:8080/archiva/repository/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <repositories>
+    <repository>
+      <id>noblesavage.archiva.internal</id>
+      <name>Archiva Managed Internal Repository</name>
+      <url>http://test.eeni.tbm.tudelft.nl:8080/archiva/repository/internal</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>noblesavage.archiva.snapshots</id>
+      <name>Archiva Managed Snapshot Repository</name>
+      <url>http://test.eeni.tbm.tudelft.nl:8080/archiva/repository/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>    
+  </repositories>
+  
+</project>

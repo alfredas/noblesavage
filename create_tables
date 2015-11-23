@@ -1,0 +1,85 @@
+-- Table: corpus
+
+-- DROP TABLE corpus;
+
+CREATE TABLE corpus
+(
+  id serial NOT NULL,
+  "name" character varying(500) NOT NULL,
+  url character varying(2000) NOT NULL,
+  reader_type character varying(100),
+  tags character varying(2000),
+  indexheader character varying(2000),
+  wordfrequency character varying(2000),
+  wordcount integer,
+  "index" oid,
+  lang_id integer NOT NULL DEFAULT 1,
+  CONSTRAINT corpus_pkey PRIMARY KEY (id),
+  CONSTRAINT corpus_langid_fkey FOREIGN KEY (lang_id)
+      REFERENCES lang (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE corpus OWNER TO postgres;
+
+
+-- Table: article
+
+-- DROP TABLE article;
+
+CREATE TABLE article
+(
+  id serial NOT NULL,
+  url character varying(2000) NOT NULL,
+  title character varying(2000),
+  date_created date NOT NULL,
+  "text" text NOT NULL,
+  tags character varying(2000),
+  corpus_id integer,
+  wordfrequency character varying(2000),
+  wordcount integer,
+  CONSTRAINT article_pkey PRIMARY KEY (id),
+  CONSTRAINT article_corpusid_fkey FOREIGN KEY (corpus_id)
+      REFERENCES corpus (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE article OWNER TO postgres;
+
+
+-- Table: lang
+
+-- DROP TABLE lang;
+
+CREATE TABLE lang
+(
+  id serial NOT NULL,
+  title character varying(2000),
+  CONSTRAINT lang_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE lang OWNER TO postgres;
+
+-- Table: "user"
+
+-- DROP TABLE "user";
+
+CREATE TABLE "user"
+(
+  id serial NOT NULL,
+  username character varying(2000) NOT NULL,
+  "password" character varying(2000),
+  "admin" boolean DEFAULT false,
+  CONSTRAINT user_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE "user" OWNER TO postgres;
+

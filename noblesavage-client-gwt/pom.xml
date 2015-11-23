@@ -1,0 +1,41 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>noblesavage</artifactId>
+    <groupId>nl.tudelft.tbm.noblesavage</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  
+  <modelVersion>4.0.0</modelVersion>
+  <packaging>jar</packaging>
+  <artifactId>noblesavage-client-gwt</artifactId>
+  <name>noblesavage-client-gwt</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>nl.tudelft.tbm.noblesavage</groupId>
+      <artifactId>noblesavage-common</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>nl.tudelft.tbm.noblesavage</groupId>
+      <artifactId>noblesavage-facade</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+    </dependency>
+
+    <!-- ========== GWT ================ -->
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-servlet</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+    </dependency>
+
+  </dependencies>
+  
+</project>

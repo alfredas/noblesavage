@@ -1,0 +1,28 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+
+    <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="max_fetch_depth">1</property>
+    
+    <!-- SQL display properties for debugging -->    
+    <property name="show_sql">true</property> <!-- don't show SQL in console, better use logging -->
+    <property name="format_sql">true</property>
+    <property name="use_sql_comments">true</property>
+    
+    <!-- annotated class mappings -->
+    
+    <mapping class="nl.tudelft.tbm.noblesavage.domain.article.Article" />
+    <mapping class="nl.tudelft.tbm.noblesavage.domain.corpus.Corpus" />
+    <mapping class="nl.tudelft.tbm.noblesavage.domain.user.User" />
+
+    <!-- report-style named queries -->
+    
+    <mapping resource="nl/tudelft/tbm/noblesavage/store/Queries.hbm.xml" />
+    
+     
+  </session-factory>
+</hibernate-configuration>

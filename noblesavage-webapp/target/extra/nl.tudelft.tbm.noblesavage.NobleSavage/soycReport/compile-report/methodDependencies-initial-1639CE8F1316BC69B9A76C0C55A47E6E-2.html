@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: com.google.gwt.xml.client</h2>
+<a name="com.google.gwt.xml.client.Attr"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.Attr</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.Attr</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.CDATASection"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.CDATASection</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.CDATASection</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.CharacterData"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.CharacterData</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.CharacterData</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.Comment"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.Comment</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.Comment</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.DOMException"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.DOMException</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.DOMException</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.DOMParseException::$DOMParseException</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImplSafari::throwDOMParseException</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImplSafari::$parseImpl</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.DOMException::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.DOMParseException::$DOMParseException</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImplSafari::throwDOMParseException</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImplSafari::$parseImpl</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.DOMException::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.XMLParserImplSafari::throwDOMParseException</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImplSafari::$parseImpl</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.Document"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.Document</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.Document</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.DocumentFragment"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.DocumentFragment</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.DocumentFragment</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.Element"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.Element</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.Element</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.Node"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.Node</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.Node</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.NodeList"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.NodeList</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.NodeList</a>
+<ul class="soyc-call-stack-list">
+<li>gwtupload.client.IUploader$Utils::getXmlNodeValue</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.ProcessingInstruction"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.ProcessingInstruction</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.ProcessingInstruction</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.Text"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.Text</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.Text</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.impl.NodeImpl::build</li>
+<li>com.google.gwt.xml.client.impl.XMLParserImpl::$parse</li>
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="com.google.gwt.xml.client.XMLParser"><h3 class="soyc-class-header">Class: com.google.gwt.xml.client.XMLParser</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.XMLParser</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.xml.client.XMLParser::parse</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.xml.client.XMLParser::parse</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

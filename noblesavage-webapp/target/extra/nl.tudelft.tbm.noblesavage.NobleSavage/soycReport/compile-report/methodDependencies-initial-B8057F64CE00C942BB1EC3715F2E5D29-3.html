@@ -1,0 +1,691 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: nl.tudelft.tbm.noblesavage.client.events</h2>
+<a name="nl.tudelft.tbm.noblesavage.client.events.CorpusEvent"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.CorpusEvent</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpus</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpusFromReaderParams</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$1ExecuteHandler::onClick</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent::$CorpusEvent</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpus</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpusFromReaderParams</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$1ExecuteHandler::onClick</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent::$dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent::dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpus</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpusFromReaderParams</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$1ExecuteHandler::onClick</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent::dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpus</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpusFromReaderParams</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$1ExecuteHandler::onClick</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent::getAssociatedType</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpus</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpusFromReaderParams</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$1ExecuteHandler::onClick</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEvent::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$5::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpus</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createCorpusFromReaderParams</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$1ExecuteHandler::onClick</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusListPane::$CorpusListPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler::onCorpusSelected</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusListPane::$CorpusListPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler::onListChanged</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusListPane::$CorpusListPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler::onListLoaded</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.CorpusEventHandler::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusListPane::$CorpusListPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.EventBus"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.EventBus</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.EventBus</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.Client::$onModuleLoad</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.LoginEvent"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.LoginEvent</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginEvent</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::onSuccess</li>
+<li>com.google.gwt.user.client.rpc.AsyncCallback::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginEvent::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.LoginEvent::$LoginEvent</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::onSuccess</li>
+<li>com.google.gwt.user.client.rpc.AsyncCallback::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginEvent::$dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.LoginEvent::dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::onSuccess</li>
+<li>com.google.gwt.user.client.rpc.AsyncCallback::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginEvent::dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::onSuccess</li>
+<li>com.google.gwt.user.client.rpc.AsyncCallback::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginEvent::getAssociatedType</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::onSuccess</li>
+<li>com.google.gwt.user.client.rpc.AsyncCallback::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginEvent::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$3::onSuccess</li>
+<li>com.google.gwt.user.client.rpc.AsyncCallback::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.LoginHandler"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.LoginHandler</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginHandler</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusListPane::$CorpusListPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginHandler::onLogin</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.LoginHandler::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusListPane::$CorpusListPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.LoginHandler::onLogout</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.LoginHandler::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusListPane::$CorpusListPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.ReadyEvent"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.ReadyEvent</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.Client::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::$dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::getAssociatedType</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.core.client.JavaScriptException::getName</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>nl.tudelft.tbm.noblesavage.facade.UserFacade_Proxy::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.ReadyHandler"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.ReadyHandler</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyHandler</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.Client::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyHandler::needRefresh</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::$dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyHandler::onNotReady</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::$dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.ReadyHandler::onReady</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::$dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.events.ReadyEvent::dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$login</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen$1::onClick</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ClickEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$createLoginPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.LoginScreen::$LoginScreen</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.UploadEvent"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.UploadEvent</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.UploadEvent</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.UploadEvent::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.UploadEvent::$UploadEvent</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.UploadEvent::$dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.events.UploadEvent::dispatch</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.UploadEvent::dispatch</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.UploadEvent::getAssociatedType</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.UploadEvent::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader$1::$onFinish</li>
+<li>gwtupload.client.Uploader::$onFinishUpload</li>
+<li>gwtupload.client.SingleUploader::$onFinishUpload</li>
+<li>gwtupload.client.Uploader::$uploadFinished</li>
+<li>gwtupload.client.Uploader::$cancelUpload</li>
+<li>gwtupload.client.Uploader$3::onError</li>
+<li>gwtupload.client.Uploader::$$init</li>
+<li>gwtupload.client.Uploader::$Uploader</li>
+<li>gwtupload.client.SingleUploader::$SingleUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.FileUploader::$FileUploader</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+<a name="nl.tudelft.tbm.noblesavage.client.events.UploadHandler"><h3 class="soyc-class-header">Class: nl.tudelft.tbm.noblesavage.client.events.UploadHandler</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>nl.tudelft.tbm.noblesavage.client.events.UploadHandler</a>
+<ul class="soyc-call-stack-list">
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createParameterGrid</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::$onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$3::onSuccess</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$getFieldsByReaderType</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane$2::onChange</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::dispatch</li>
+<li>com.google.gwt.event.dom.client.ChangeEvent::$clinit</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$createNewCorpusPanel</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CreateCorpusFormPane::$CreateCorpusFormPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.CorpusPane::$CorpusPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.components.MainPane::$MainPane</li>
+<li>nl.tudelft.tbm.noblesavage.client.Client::$Client</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

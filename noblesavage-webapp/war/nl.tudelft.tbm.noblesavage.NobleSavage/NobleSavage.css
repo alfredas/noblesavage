@@ -1,0 +1,33 @@
+.gwt-Label {
+	font-size: 8pt;
+}
+
+.ns-smallButton {
+	font-size:8pt;
+	margin:0;
+	padding:0;
+}
+
+.ns-flexTable td {
+	border: 1px solid #BBBBBB;
+	padding: 1px;
+}
+
+.ns-smallInput {
+	font-size:8pt;
+	margin:0;
+	border: 1px solid #BBBBBB;
+  	padding: 1px;
+}
+
+.ns-verySmallInput {
+	font-size:8pt;
+	margin:0;
+	border: 1px solid #BBBBBB;
+  	padding: 1px;
+  	width: 20px;
+}
+
+a {
+	font-size:8pt;
+}

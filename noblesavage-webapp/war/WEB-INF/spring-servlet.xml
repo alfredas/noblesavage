@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+  <!-- Maps the request through to a concrete controller instance -->
+  <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <property name="mappings">
+      <value>
+      /**/corpus.rpc=corpusController 
+      /**/article.rpc=articleController
+      /**/user.rpc=userController
+      </value>
+    </property>
+  </bean>
+
+  <!-- GwtRpcController wraps our service in order to decode the incoming -->
+  <!-- request then delegates processing of the call to the POJO service -->
+  <!-- and then encodes the return value forwarding the response. -->
+  <bean id="corpusController" class="nl.tudelft.tbm.noblesavage.webapp.GwtRpcController">
+    <property name="remoteService" ref="corpusFacade"/>
+  </bean>
+  
+  <bean id="articleController" class="nl.tudelft.tbm.noblesavage.webapp.GwtRpcController">
+    <property name="remoteService" ref="articleFacade"/>
+  </bean>
+  
+  <bean id="userController" class="nl.tudelft.tbm.noblesavage.webapp.GwtRpcController">
+    <property name="remoteService" ref="userFacade"/>
+  </bean>
+
+</beans>

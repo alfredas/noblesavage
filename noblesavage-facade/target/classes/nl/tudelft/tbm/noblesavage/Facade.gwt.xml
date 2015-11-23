@@ -1,0 +1,7 @@
+<module>
+	<inherits name='com.google.gwt.user.User' />
+	<source path='facade' />
+	
+	<servlet path="/corpus.rpc" class="nl.tudelft.tbm.noblesavage.facadeimpl.CorpusFacadeImpl"/>
+	<servlet path="/article.rpc" class="nl.tudelft.tbm.noblesavage.facadeimpl.ArticleFacadeImpl"/>
+</module>

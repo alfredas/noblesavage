@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+  ">
+  
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <property name="driverClassName" value="org.postgresql.Driver" />
+	   
+	  <!--   
+    <property name="url" value="jdbc:postgresql://localhost:5433/noblesavage" />
+    <property name="username" value="postgres" />
+    <property name="password" value="p5XsdVY8KH2wBOIFnEEK" />
+    -->
+    
+    <property name="url" value="jdbc:postgresql://localhost:5432/noblesavage" /> 
+    <property name="username" value="postgres" />
+    <property name="password" value="postgres" />
+	  
+	
+  </bean>
+  
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+    <property name="dataSource" ref="dataSource" />
+    <!-- 
+    <property name="namingStrategy">
+      <util:constant static-field="org.hibernate.cfg.ImprovedNamingStrategy.INSTANCE" />
+    </property>
+    -->
+    <property name="namingStrategy" ref="namingStrategy"/>
+    <property name="configLocation" value="/WEB-INF/hibernate.cfg.xml" />
+    <property name="hibernateProperties">
+      <props>
+        <!-- this property cannot be set in hibernate.cfg.xml, see Hibernate documentation -->
+        <prop key="hibernate.bytecode.use_reflection_optimizer">true</prop>
+      </props>
+    </property>
+  </bean>
+  
+  <bean id="namingStrategy" class="nl.tudelft.tbm.noblesavage.store.namingstrategy.DefaultQuotedNamingStrategy"/>
+  
+  <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    <property name="dataSource" ref="dataSource" />
+    <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+
+
+  <bean id="abstractStore" abstract="true" class="nl.tudelft.tbm.noblesavage.store.AbstractEntityStoreImpl">
+    <property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+
+
+  <bean id="articleStore" parent="abstractStore" class="nl.tudelft.tbm.noblesavage.store.ArticleStoreImpl" />
+  <bean id="userStore" parent="abstractStore" class="nl.tudelft.tbm.noblesavage.store.UserStoreImpl" />
+  <bean id="corpusStore" parent="abstractStore" class="nl.tudelft.tbm.noblesavage.store.CorpusStoreImpl">
+  	<property name="articleStore" ref="articleStore" />
+  </bean>
+  
+    
+</beans>

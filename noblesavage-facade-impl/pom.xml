@@ -1,0 +1,113 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>noblesavage</artifactId>
+    <groupId>nl.tudelft.tbm.noblesavage</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>noblesavage-facade-impl</artifactId>
+  <name>noblesavage-facade-impl</name>
+  <packaging>jar</packaging>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>nl.tudelft.tbm.noblesavage</groupId>
+      <artifactId>noblesavage-common</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>nl.tudelft.tbm.noblesavage</groupId>
+      <artifactId>noblesavage-domain</artifactId>
+    </dependency>
+      
+    <dependency>
+      <groupId>nl.tudelft.tbm.noblesavage</groupId>
+      <artifactId>noblesavage-facade</artifactId>
+    </dependency>
+  
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>net.sf.dozer</groupId>
+      <artifactId>dozer</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>rome</groupId>
+      <artifactId>rome</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+	  <groupId>com.google.gwt</groupId>
+	  <artifactId>gwt-servlet</artifactId>
+	  <scope>runtime</scope>
+	</dependency>
+
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+    </dependency>
+
+     <!-- ====== Lucene ============== -->
+    <dependency>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-core</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-snowball</artifactId>
+    </dependency>
+    
+    <!-- ====== Semantic Vectors ============== -->
+    <dependency>
+      <groupId>nl.tudelft.tbm.noblesavage.semanticvectors</groupId>
+      <artifactId>semanticvectors</artifactId>
+    </dependency>
+    
+  </dependencies>
+  
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.java</include>
+        </includes>
+      </resource>
+      <resource>
+	  <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+			</resource>
+    </resources>
+  </build>
+
+</project>

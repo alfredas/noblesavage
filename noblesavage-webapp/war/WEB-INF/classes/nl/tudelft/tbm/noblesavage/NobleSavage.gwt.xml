@@ -1,0 +1,12 @@
+<module>
+      <inherits name='com.google.gwt.user.User'/>   	
+      <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+      <inherits name='nl.tudelft.tbm.noblesavage.Facade'/>
+      <inherits name='com.google.gwt.gen2.Gen2'/>
+      <!-- Include GWTUpload library -->
+  	  <inherits name="gwtupload.GWTUpload"/>
+  	  <!-- Load dynamically predefined styles in the library when the application starts -->
+  	  <stylesheet src="Upload.css"/>
+      <stylesheet src='ScrollTableDemo.css'/>
+      <entry-point class='nl.tudelft.tbm.noblesavage.client.Client'/>
+</module>

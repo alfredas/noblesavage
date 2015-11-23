@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+  <sql-query name="ArticleStoreImpl.deleteNonUniqueArticlesInCorpus">
+    <![CDATA[
+      delete from article 
+        where article.id in (
+          select article.id from article, article as A2 
+            where 
+              article.corpus_id = :corpusId 
+              and A2.corpus_id = :corpusId
+              and A2.url = article.url 
+              and article.id > A2.id
+          )
+    ]]>
+  </sql-query>
+
+  
+  
+</hibernate-mapping>
+
